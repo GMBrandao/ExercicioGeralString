@@ -8,8 +8,6 @@ QuantLetras(frase);
 Console.WriteLine("A string tem " + vogais + " vogais.");
 Console.WriteLine("A string tem " + consoantes + " consoantes.");
 Console.WriteLine(Tamanhos(frase));
-
-
 contrario = Espelhar(frase);
 Console.WriteLine("A string ao contrário é:");
 Console.WriteLine(contrario);
