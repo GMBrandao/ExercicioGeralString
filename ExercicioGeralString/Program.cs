@@ -18,14 +18,14 @@ string Tamanhos(string frase)
     char[] aux = frase.ToCharArray();
     string maior = frase.ToUpper();
     string menor = frase.ToLower();
-    for (int i  = 0; i < frase.Length; i++)
+    for (int i = 0; i < frase.Length; i++)
     {
-        if(i % 2 == 0)
+        if (i % 2 == 0)
             aux[i] = maior[i];
         else
             aux[i] = menor[i];
     }
-    string mudatamanho =  new string (aux);
+    string mudatamanho = new string(aux);
     return mudatamanho;
 }
 
@@ -34,12 +34,12 @@ string Espelhar(string normal)
     int len = normal.Length;
     char[] chars = new char[normal.Length];
 
-    for (int i = len-1; i >= 0; i--)
+    for (int i = len - 1; i >= 0; i--)
     {
-        chars[len-i-1] = normal[i];
+        chars[len - i - 1] = normal[i];
     }
 
-    string espelhada = new string (chars);
+    string espelhada = new string(chars);
     return espelhada;
 }
 
