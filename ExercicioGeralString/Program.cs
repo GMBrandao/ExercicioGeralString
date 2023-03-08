@@ -9,11 +9,12 @@ Console.WriteLine("A string tem " + vogais + " vogais.");
 Console.WriteLine("A string tem " + consoantes + " consoantes.");
 Console.WriteLine(Tamanhos(frase));
 
-/*
+
 contrario = Espelhar(frase);
 Console.WriteLine("A string ao contrário é:");
 Console.WriteLine(contrario);
-*/
+
+
 string Tamanhos(string frase)
 {
     char[] aux = frase.ToCharArray();
@@ -35,10 +36,9 @@ string Espelhar(string normal)
     int len = normal.Length;
     char[] chars = new char[normal.Length];
 
-    for (int i = 0; i > len-1; i++)
+    for (int i = len-1; i >= 0; i--)
     {
-        Console.WriteLine(i);
-        chars[len - i] = normal[i];
+        chars[len-i-1] = normal[i];
     }
 
     string espelhada = new string (chars);
